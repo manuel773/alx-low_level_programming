@@ -3,19 +3,32 @@
 /**
  * _memset - a function that fills
  * memory with a constant byte
- * @s: pointer to char parameter
- * @b: data to change
- * @n: index
- * Return: *s
+ * @s: input pointer to char type
+ * represents the pointer to the
+ * block of memory to fill
+ * @b: input variable of char type
+ * represents the character to
+ * fill
+ * @n: unsigned int variable
+ * the number of bytes to be filled
+ * Return: A pointer to the filled memory
+ * area @s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	/**
+	 * declare an unsigned int
+	 * because we are storing a
+	 * value that will always be
+	 * non-negative (zero or positive)
+	 */
+	unsigned int a = 0;
 
-	for (i = 0; i < n; i++)
+	while (a < n)
 	{
-		s[i] = b;
+		s[a] = b;
+		a++;
 	}
 	return (s);
 }
