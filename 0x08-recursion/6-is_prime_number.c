@@ -1,5 +1,6 @@
 #include "main.h"
 
+int check_prime(int, int);
 /**
  * is_prime_number - func that returns 1 if a num is a prime num, 0 otherwise
  * @n: number for input
