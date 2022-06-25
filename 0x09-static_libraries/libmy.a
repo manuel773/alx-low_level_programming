@@ -1,6 +1,5 @@
 #!/bin/bash
 
-gcc -c main.h
-ar -cvq libmy.a main.o
-ar -t libmy.a
+gcc -c *.c
+ar -rc libmy.a *.o
 ranlib libmy.a
